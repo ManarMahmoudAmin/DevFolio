@@ -1,0 +1,389 @@
+ :root {
+    --main-color: #0078ff;
+    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace
+}
+.bg-main {
+    background-color: var(--main-color);
+}
+body 
+{
+    font-family: var(--bs-font-sans-serif)
+}
+* {
+    margin: 0;
+}
+.logo a {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+nav ul li {
+    font-size: 16px;
+    font-weight: 600;
+}
+nav ul li:hover {
+    border-bottom: white 2px solid;
+}
+nav ul .dropdown-menu .dropend button{
+    background-color: inherit;   
+    color: inherit;
+    border: none;
+}
+header {
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.header-overlay {
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100vh;
+}
+header .header-overlay h1 {
+    font-size: 4.5rem;
+    
+}
+header .header-overlay p {
+    font-size: 2.5rem;
+    text-align: center;
+}
+header .header-overlay p::after {
+    content: ' |';
+    animation-name: typing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+.about h2::after, .contact h2::after {
+    content: '';
+    background-color: var(--main-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 17%;
+    height: 3px;
+}  
+.about .info {
+    font-weight: 600;
+    color: #1e1e1e;
+    font-size: 1.1rem;
+ }
+title {
+    position: relative;
+}
+.title::after {
+    content: '';
+    position: absolute;
+    background-color: var(--main-color);
+    width: 2.5%;
+    height: 4px;  
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.title h2 {
+    font-size: 3rem !important;
+    font-weight: bolder;
+}
+
+.services .item h1 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0.4rem 0;
+}
+.services .icon {
+    border: 10px solid var(--main-color);
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    font-size: 40px;
+}
+.services .icon {
+    transition: all .5s;
+}
+.services .item:hover .icon{
+    background-color: var(--main-color) !important;
+    color: white;
+    border: 10px solid #c7daf0 !important;
+}
+.counters{
+    background-image: url(../images/counters-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.counter-overlay {
+    background-color: rgba(0, 120, 255, .7);
+    width: 100%;
+    
+}
+.counter-overlay p {
+    font-size: 2rem;
+}
+.counter-icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    border: 10px solid #c7daf0;
+}
+.counter-icon i {
+    font-size: 1.4rem;
+}
+.work .work-item img {
+    transition: all 1s;
+}
+.work-item:hover img {
+   transform: scale(1.3, 1.3);
+}
+.work .work-info p {
+    font-size: 12px !important;
+}
+.work p span {
+    color: var(--main-color);
+    text-transform: capitalize;   
+}
+.work .work-icon {
+    width: 2rem;
+    height: 2rem;
+    border: 3px solid var(--main-color);
+    padding: 18px;
+}
+.work .work-icon i {
+    font-size: 1.4rem;
+    color: var(--main-color);   
+}
+.testimonials{
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.testimonials-overlay {
+    background-color: rgba(0, 120, 255, .7);
+    width: 100%;
+    
+}
+.testimonials .client-img {
+    width: 12%;
+    border-radius: 50%;
+}
+.testimonials .client-desc h5{
+    font-weight: 600;
+    margin: 1rem 0;
+    display: block;
+    font-size: 1.4rem
+}
+.testimonials .testimonials-overlay .carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+.testimonials .testimonials-overlay .carousel-indicators button.active {
+    background-color: white !important;
+}
+.blog .card-body {
+    position: relative;
+}
+.blog .category::after {  
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-color);
+    color: white;
+    font-size: .7rem;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.1px;
+    text-transform: uppercase;
+    padding: 8px 14px;
+    border-radius: 0.375rem;
+}
+.blog .category1::after {
+    content: 'travel';
+    
+}
+.blog .category2::after {
+    content: 'web design';
+    
+}
+.blog .card-footer .avatar {
+    width: 32px;
+    border-radius: 50%;
+}
+.blog .card .card-footer a{
+    text-decoration: none;
+    color: black;
+}
+.blog .card .card-footer a:hover {
+    color: var(--main-color);
+}
+.contact {
+    background-image: url(../images/overlay-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.contact-overlay {
+    background-color: rgba(0, 120, 255, .7);
+    width: 100%;
+}
+.contact form .form-item {
+    font-size: 14px;
+    padding: 10px 15px;
+}
+.contact .bttn {
+    font-size: 1.2rem;
+    padding: 10px 24px;
+    transition: all 0.4s;
+}
+.contact .bttn:hover {
+    border: 5px solid #c7daf0 !important;
+}
+.contact .icon {
+    width: 2rem;
+    height: 2rem;
+    border-color: var(--main-color);
+}
+footer {
+    background-color: #0062d3;
+}
+@keyframes typing {
+    1% { content: ' |';}
+    2% { content: ' |';}
+    3% { content: ' |';}
+    4% { content: ' |';}
+    5% { content: ' |';}
+    6% { content: ' D|';}
+    7% { content: ' De|';}
+    8% { content: ' Des|';}
+    9% { content: ' Desi|';}
+    10% { content: ' Desig|';}
+    11% { content: ' Designe|';}
+    12% { content: ' Designer|';}
+    14% { content: ' Designe|';}
+    15% { content: ' Design|';}
+    17% { content: ' Desig|';}
+    18% { content: ' Desi|';}
+    20% { content: ' Des|';}
+    21% { content: ' De|';}
+    23% { content: ' D|';}
+    24% { content: ' |';}
+    26% { content: ' D|';}
+    27% { content: ' De|';}
+    29% { content: ' Dev|';}
+    30% { content: ' Deve|';}
+    32% { content: ' Devel|';}
+    33% { content: ' Develo|';}
+    35% { content: ' Develop|';}
+    36% { content: ' Develope|';}
+    37% { content: ' Developer|';}
+    39% { content: ' Develope|';}
+    40% { content: ' Develop|';}
+    42% { content: ' Develo|';}
+    43% { content: ' Devel|';}
+    45% { content: ' Deve|';}
+    46% { content: ' Dev|';}
+    47% { content: ' De|';}
+    49% { content: ' D|';}
+    50% { content: ' |';}
+    51% { content: ' |';}
+    52% { content: ' |';}
+    53% { content: ' |';}
+    54% { content: ' |';}
+    55% { content: ' F|';}
+    56% { content: ' Fr|';}
+    57% { content: ' Fre|';}
+    58% { content: ' Free|';}
+    59% { content: ' Freel|';}
+    60% { content: ' Freela|';}
+    61% { content: ' Freelan|';}
+    62% { content: ' Freelanc|';}
+    63% { content: ' Freelance|';}
+    64% { content: ' Freelancer|';}
+    65% { content: ' Freelance|';}
+    67% { content: ' Freelanc|';}
+    68% { content: ' Freelan|';}
+    69% { content: ' Freela|';}
+    70% { content: ' Freel|';}
+    71% { content: ' Free|';}
+    72% { content: ' Fre|';}
+    73% { content: ' Fr|';}
+    74% { content: ' F|';}
+    75% { content: ' |';}
+    76% { content: ' |';}
+    77% { content: ' |';}
+    78% { content: ' |';}
+    79% { content: ' |';}
+    80% { content: ' P|';}
+    81% { content: ' Ph|';}
+    82% { content: ' Pho|';}
+    83% { content: ' Phot|';}
+    84% { content: ' Photo|';}
+    85% { content: ' Photog|';}
+    86% { content: ' Photogr|';}
+    87% { content: ' Photogra|';}
+    88% { content: ' Photograp|';}
+    89% { content: ' Photograph|';}
+    90% { content: ' Photographe|';}
+    91% { content: ' Photographer|';}
+    92% { content: ' Photographe|';}
+    93% { content: ' Photograph|';}
+    93% { content: ' Photograp|';}
+    93.5% { content: ' Photogra|';}
+    94% { content: ' Photogr|';}
+    95% { content: ' Photog|';}
+    95.5% { content: ' Photo|';}
+    96% { content: ' Phot|';}
+    97% { content: ' Pho|';}
+    98% { content: ' Ph|';}
+    99% { content: ' P|';}
+    100% { content: ' |';}
+}
+
+@media screen and (max-width: 768px) {  
+    header h1 {
+        text-align: center;
+        font-size: 3rem !important;
+        padding: 5px;
+    }
+    header .header-overlay p {
+        font-size: 1.7rem;
+    }
+    .title::after {
+        width: 7%;
+    }
+    nav .container-fluid {
+        margin-left: 0  !important;
+        margin-right: 0 !important;
+    }
+    .logo {
+        margin-left: 0!important;
+        padding-left: 0 !important;
+    }
+    .about .col-md-6 {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+    .services .container, .work .container {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .about .container, .contact .col-md-6, .testimonials .carousel-inner  {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .contact .container {
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+    .testimonials  .carousel-inner .client-desc {
+        width: 100% !important;
+    }
+    .testimonials img {
+        transform: scale(2.5, 2.5);
+        margin-bottom: 40px;
+    }
+    
+}
+.testimonial, #counter {
+    background-attachment : fixed 
+}
